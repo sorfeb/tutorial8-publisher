@@ -7,3 +7,5 @@
 
 ## 2. The url of: “amqp://guest:guest@localhost:5672” is the same as in the subscriber program, what does it mean?
 > The URL **`amqp://guest:guest@localhost:5672`** being the same in both the publisher and subscriber programs means they are connecting to the same AMQP broker. 
+
+![Uploading image.png…]()
