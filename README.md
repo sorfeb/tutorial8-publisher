@@ -14,3 +14,8 @@
 ## Sending and processing event:
 ![image](https://github.com/sorfeb/tutorial8-publisher/assets/112263712/36a760a0-377f-45c1-9b6f-bc88d28c0f4b)
 While RabbitMQ is running, I ran `cargo run` on both `publisher` and `subscriber` directories. The `publisher` will send data in the form of 5 events to the message broker (RabbitMQ) which are then received by the `subscriber`.
+
+## Monitoring chart based on publisher
+![image](https://github.com/sorfeb/tutorial8-publisher/assets/112263712/59c113b9-97c5-4384-a4c8-6d6f7e63dc58)
+The spikes appeared on the chart **"Message Rates"** in the RabbitMQ dashboard everytime I ran `cargo run` at the `publisher directory` during the timeframes 8:57:30 - 8:57:40 and 8:57:55 - 8:58:05. They peaked at 1.0/s both, so that means that the `publisher` (triggered by me) sent 1 message on each of those timeframes.
+
